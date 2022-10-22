@@ -1,0 +1,7 @@
+1) The system shall memorize the attractions for kids on a list.
+	1.1) The system shall display a map with the position of the attractions signed with an icon.
+
+2) The system shall display a report when the restaurant confirms a reservation.
+
+3) The system shall display a list of hotels, with their cost,
+according to the budget of the customer.

@@ -1,0 +1,11 @@
+As a mum with kids,
+I want to know the position of the attractions for kids,
+So that I can bring them there.
+
+As a customer,
+I want to know the prices of the hotels,
+So that I can choose according to my budget.
+
+As a shopkeeper,
+I want to sell items online,
+So that I can organise the purchases earlier.
