@@ -1,0 +1,5 @@
+1) The system shows the total cost of the holiday in the top right corner during booking.
+
+2) The system shall provide the assistance service menù.
+
+3) The system shall warn with a message the customer that there are fewer than rooms 10 in the selected hotel.

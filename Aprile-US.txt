@@ -1,0 +1,15 @@
+1)
+	As a customer,
+	I want to see the total cost of the vacation,
+	So that I can see how much I have to spend.
+
+
+2)
+	As a Shopkeeper,
+	I want to show my merchandise in a catalog online,
+ 	So that I can expose it easily to my customers.
+
+3)
+	As a hotel manager,
+	I want to have an assistance service on a request of a customer,
+	So that I can help and give more information to the customer.
