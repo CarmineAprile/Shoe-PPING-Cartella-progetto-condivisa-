@@ -1,0 +1,22 @@
+Nome: Log in
+
+Flusso principale:
+
+1) L'utente richiede log-in
+2) Sistema fornisce form per selezionare tipologie login
+3) Utente sceglie log-in in "locale"
+4) Sistema fornisce form per inserire Nome Utente e password
+5) Utente inserisce Nome utente e password
+6) Il sistema verifica l'Utente
+7) Utente è stato verificato
+
+Extensions:
+
+2a) Utente ha scelto login via FB: <<LOGIN VIA FB>>
+2b) Utente ha scelto login via Google: <<LOGIN VIA GOOGLE>>
+
+
+2n) ...
+
+
+6a) Utente non riconosciuto: mosta menù registrazione
