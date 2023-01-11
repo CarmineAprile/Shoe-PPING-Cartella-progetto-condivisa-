@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ShoePPING</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="or_sign_with">or sign in with</string>
+    <string name="google_icon">Google icon</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="or_login_with">Or Login with</string>
+    <string name="icon_app">Icon App</string>
+    <string name="create_your_account">--------------- CREATE YOUR ACCOUNT ---------------</string>
+    <string name="repassword">Repassword</string>
+    <string name="retype_password">Retype Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="google_logo">Google logo</string>
+    <string name="or_sign_up_with">Or Sign Up with</string>
+    <string name="sign_up_str">Sign Up</string>
+</resources>

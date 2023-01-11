@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1CDD4"
+    tools:context=".registrationpage.RegistrationActivity">
+
+    <ImageView
+        android:id="@+id/iconapp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/iconapp"
+        android:contentDescription="@string/icon_app" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iconapp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:autofillHints=""
+        android:background="@color/white"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:drawablePadding="15dp"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+        android:textColor="#554B4D"
+        android:textColorHint="#554B4D" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:autofillHints=""
+        android:background="@color/white"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="15dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textColor="#554B4D"
+        android:textColorHint="#554B4D" />
+
+    <EditText
+        android:id="@+id/repassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:autofillHints=""
+        android:background="@color/white"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="15dp"
+        android:hint="@string/retype_password"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textColor="#554B4D"
+        android:textColorHint="#554B4D" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/createbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/repassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#F28F8F"
+        android:text="@string/create_account"
+        android:textColor="#554B4D"/>
+
+</RelativeLayout>
