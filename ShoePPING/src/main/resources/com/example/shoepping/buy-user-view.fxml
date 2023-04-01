@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #EDEAEA;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shoepping.BuyUserGController">
+   <AnchorPane prefHeight="70.0" prefWidth="700.0" style="-fx-background-color: #F1CDD4;">
+      <HBox prefHeight="70.0" prefWidth="700.0">
+         <HBox prefHeight="70.0" prefWidth="100.0" style="-fx-background-color: #EDEAEA;">
+            <HBox.margin>
+               <Insets left="70.0" />
+            </HBox.margin>
+            <ImageView fitHeight="30.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets left="10.0" top="22.0" />
+               </HBox.margin>
+               <Image url="@../../../drawable/iconbag.png" />
+            </ImageView>
+            <Label text="BUY" textFill="#554b4d">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" top="25.0" />
+               </HBox.margin>
+            </Label>
+         </HBox>
+         <HBox fx:id="sellButton" onMouseClicked="#onSellClick" prefHeight="70.0" prefWidth="100.0" style="-fx-background-color: #F1CDD4;">
+            <ImageView fitHeight="30.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets left="10.0" top="22.0" />
+               </HBox.margin>
+               <Image url="@../../../drawable/iconcard.png" />
+            </ImageView>
+            <Label text="SELL" textFill="#554b4d">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" top="25.0" />
+               </HBox.margin>
+            </Label>
+         </HBox>
+         <ImageView fitHeight="77.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+            <HBox.margin>
+               <Insets left="45.0" top="5.0" />
+            </HBox.margin>
+            <Image url="@../../../drawable/iconapp.png" />
+         </ImageView>
+         <ImageView fx:id="userIcon" fitHeight="30.0" fitWidth="26.0" onMouseClicked="#onProfileClick" pickOnBounds="true" preserveRatio="true">
+            <HBox.margin>
+               <Insets left="230.0" top="22.0" />
+            </HBox.margin>
+            <Image url="@../../../drawable/iconuser.png" />
+         </ImageView>
+      </HBox>
+   </AnchorPane>
+   <VBox layoutY="70.0" prefHeight="445.0" prefWidth="700.0">
+      <Button fx:id="nikeButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onNike" prefHeight="88.0" prefWidth="650.0" style="-fx-background-radius: 20; -fx-background-color: #ffffff;" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <graphic>
+            <HBox prefHeight="75.0" prefWidth="650.0">
+               <ImageView fitHeight="75.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                  <HBox.margin>
+                     <Insets left="30.0" top="5.0" />
+                  </HBox.margin>
+                  <Image url="@../../../drawable/iconnike.png" />
+               </ImageView>
+               <Label prefHeight="20.0" prefWidth="510.0" text="HERE YOU CAN FIND: Air Max, Jordan, Air Force... AND MORE! " textAlignment="CENTER" textFill="#554b4d">
+                  <font>
+                     <Font name="System Bold" size="14.0" />
+                  </font>
+                  <HBox.margin>
+                     <Insets left="25.0" top="30.0" />
+                  </HBox.margin>
+               </Label>
+            </HBox>
+         </graphic>
+         <VBox.margin>
+            <Insets left="25.0" top="30.0" />
+         </VBox.margin>
+      </Button>
+      <Button fx:id="adidasButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onAdidasClick" prefHeight="88.0" prefWidth="650.0" style="-fx-background-radius: 20; -fx-background-color: #ffffff;" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <graphic>
+            <HBox prefHeight="75.0" prefWidth="650.0">
+               <ImageView fitHeight="68.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+                  <HBox.margin>
+                     <Insets left="22.0" top="10.0" />
+                  </HBox.margin>
+                  <Image url="@../../../drawable/iconadidas.png" />
+               </ImageView>
+               <Label prefHeight="20.0" prefWidth="510.0" text="HERE YOU CAN FIND: Stan Smith, Superstar, LA Trainer... AND MORE!" textAlignment="CENTER" textFill="#554b4d">
+                  <font>
+                     <Font name="System Bold" size="14.0" />
+                  </font>
+                  <HBox.margin>
+                     <Insets left="28.0" top="30.0" />
+                  </HBox.margin>
+               </Label>
+            </HBox>
+         </graphic>
+         <VBox.margin>
+            <Insets left="25.0" top="25.0" />
+         </VBox.margin>
+      </Button>
+      <Button fx:id="newBalanceButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onNewBalanceClick" prefHeight="88.0" prefWidth="650.0" style="-fx-background-radius: 20; -fx-background-color: #ffffff;" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <graphic>
+            <HBox prefHeight="75.0" prefWidth="650.0">
+               <ImageView fitHeight="75.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                  <HBox.margin>
+                     <Insets left="22.0" />
+                  </HBox.margin>
+                  <Image url="@../../../drawable/iconnewbalancee.png" />
+               </ImageView>
+               <Label prefHeight="20.0" prefWidth="507.0" text="HERE YOU CAN FIND: 327, X Racer, Shando, GR 530... AND MORE!" textAlignment="CENTER" textFill="#554b4d">
+                  <font>
+                     <Font name="System Bold" size="14.0" />
+                  </font>
+                  <HBox.margin>
+                     <Insets left="36.0" top="30.0" />
+                  </HBox.margin>
+               </Label>
+            </HBox>
+         </graphic>
+         <VBox.margin>
+            <Insets left="25.0" top="25.0" />
+         </VBox.margin>
+      </Button>
+      <Button fx:id="catalogButton" alignment="CENTER" contentDisplay="CENTER" layoutX="350.0" mnemonicParsing="false" onAction="#onCatalogClick" prefHeight="45.0" prefWidth="650.0" style="-fx-background-radius: 20; -fx-background-color: #554B4D;" text="NOT FOUND WHAT YOU ARE LOOKING FOR? SEARCH IN THE CATALOG OF USED SHOES!" textAlignment="CENTER" textFill="WHITE">
+         <VBox.margin>
+            <Insets left="25.0" top="25.0" />
+         </VBox.margin>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </VBox>
+</AnchorPane>

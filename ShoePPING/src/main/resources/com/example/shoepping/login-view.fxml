@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="loginPane" prefHeight="382.0" prefWidth="497.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shoepping.LoginGController">
+   <ImageView fitHeight="382.0" fitWidth="508.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../../drawable/loginbackground.png" />
+   </ImageView>
+   <VBox alignment="TOP_CENTER" layoutX="221.0" layoutY="57.0" prefHeight="317.0" prefWidth="271.0" spacing="5.0">
+      <TextField fx:id="loginUsername" focusTraversable="false" onKeyTyped="#maxLenghtUser" prefHeight="35.0" prefWidth="88.0" promptText="Username" />
+      <Label fx:id="usernameLabel" prefHeight="17.0" prefWidth="270.0" textFill="RED" />
+      <PasswordField fx:id="loginPassword" focusTraversable="false" onKeyTyped="#maxLenghtPass" prefHeight="35.0" prefWidth="271.0" promptText="Password" />
+      <Label fx:id="passwordLabel" prefHeight="17.0" prefWidth="270.0" textFill="RED" />
+      <VBox alignment="TOP_CENTER" prefHeight="191.0" prefWidth="271.0" spacing="15.0">
+         <Text fx:id="forgotPassword" fill="#554b4d" onMouseClicked="#passwordRecovery" strokeType="OUTSIDE" strokeWidth="0.0" text="Forgot password?" textAlignment="RIGHT" wrappingWidth="270.5865478515625">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font>
+         </Text>
+         <Button fx:id="loginButton" mnemonicParsing="false" onAction="#login" prefHeight="25.0" prefWidth="271.0" style="-fx-background-color: #F1CDD4; -fx-background-radius: 20;" text="LOGIN" textAlignment="CENTER" textFill="#554b4d">
+            <effect>
+               <DropShadow height="5.0" radius="2.0" width="5.0" />
+            </effect>
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font>
+         </Button>
+         <Text fill="#554b4d" strokeType="OUTSIDE" strokeWidth="0.0" text="Or Login with" textAlignment="CENTER" wrappingWidth="270.13670349121094" />
+         <ImageView fx:id="googleLogo" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#googleLogin" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../../../drawable/googlelogo.png" />
+         </ImageView>
+         <Text fx:id="createProfile" fill="#554b4d" onMouseClicked="#registration" strokeType="OUTSIDE" strokeWidth="0.0" text="Create new profile">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font>
+         </Text>
+      </VBox>
+   </VBox>
+   <Label layoutX="341.0" layoutY="14.0" text="Login" textFill="#554b4d">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Label>
+   <CheckBox fx:id="checkFS" focusTraversable="false" layoutX="46.0" layoutY="291.0" mnemonicParsing="false" text="File System Login" textFill="#554b4d">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </CheckBox>
+</AnchorPane>
